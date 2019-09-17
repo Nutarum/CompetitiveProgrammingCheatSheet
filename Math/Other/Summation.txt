@@ -1,0 +1,9 @@
+int summation(int start, int end){
+    if(start>end){
+        int aux = start;
+        start=end;
+        end=aux;
+    }
+    double media = start+((double)(end-start) / 2);
+    return media * ((end-start)+1);
+}
