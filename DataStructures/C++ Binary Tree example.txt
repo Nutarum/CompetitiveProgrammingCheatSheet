@@ -35,15 +35,15 @@ void insert(node *currentNode,int v){
 }
 
 void preorden(node *currentNode){
+	printf("%d ",currentNode->value);
+	
     if(currentNode->left != NULL){
         preorden(currentNode->left);
     }
       
     if(currentNode->right != NULL){
       	        preorden(currentNode->right);
-    }
-     
-    printf("%d ",currentNode->value);
+    }    
 }
 
 // dado un numero positivo "n", y n numeros enteros, genera un arbol binario (ni equilibrado ni ostias)
