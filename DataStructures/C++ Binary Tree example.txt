@@ -1,0 +1,69 @@
+#include <iostream>
+using namespace std;
+
+struct node{
+	int value;
+	node *left;
+	node *right;
+};
+
+void insert(node *currentNode,int v){
+	if(currentNode->value==v){
+		return;
+	}
+    if(currentNode->value>v){
+        if(currentNode->left == NULL){
+			node *newNode = new node;
+			newNode->value = v;
+			newNode->left = NULL;
+			newNode->right=NULL;
+			currentNode->left = newNode;
+		}else{
+			insert(currentNode->left,v);
+		}
+    }else{
+		if(currentNode->right == NULL){
+			node *newNode = new node;
+			newNode->value = v;
+			newNode->left = NULL;
+			newNode->right=NULL;
+			currentNode->right = newNode;
+		}else{
+			insert(currentNode->right,v);
+		}
+	}
+}
+
+void preorden(node *currentNode){
+    if(currentNode->left != NULL){
+        preorden(currentNode->left);
+    }
+      
+    if(currentNode->right != NULL){
+      	        preorden(currentNode->right);
+    }
+     
+    printf("%d ",currentNode->value);
+}
+
+// dado un numero positivo "n", y n numeros enteros, genera un arbol binario (ni equilibrado ni ostias)
+// numeros repetidos son ignorados
+// luego printea el arbol en preorden
+int main() {
+    int n;
+    cin>>n;  
+    
+	int v;
+	cin>>v;
+	node *tree = new node;
+    tree->value = v;
+	tree->left = NULL;
+	tree->right = NULL;
+	      
+    for(int i=1;i<n;i++){ 
+        cin>>v;
+		insert(tree,v);      
+    }    
+    
+    preorden(tree);
+}
