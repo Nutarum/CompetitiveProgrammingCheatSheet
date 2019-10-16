@@ -1,0 +1,47 @@
+#include <iostream> 
+#include <set> 
+#include <iterator> 
+  
+using namespace std; 
+  
+//a set is a data structure that stores ordered elements
+int main() { 
+    // empty set container 
+    set <int, greater <int> > gquiz1;         
+  
+    // insert elements
+    gquiz1.insert(40);     
+    gquiz1.insert(60); 
+    gquiz1.insert(50); 
+    gquiz1.insert(50); // only one 50 will be added to the set 
+  
+    // printing set gquiz1 
+    set <int, greater <int> > :: iterator itr; 
+    for (itr = gquiz1.begin(); itr != gquiz1.end(); ++itr){ 
+        cout << '\t' << *itr; 
+    } 
+    cout << endl; 
+  
+    // assigning the elements from gquiz1 to gquiz2 
+    set <int> gquiz2(gquiz1.begin(), gquiz1.end()); 
+    
+    // remove all elements up to 50 in gquiz2 (as de set is ordered, it removes all element until 50)
+    gquiz2.erase(gquiz2.begin(), gquiz2.find(50));    
+	
+	//check if element is not in the set (if find==end, element is not in the set, otherwise find value will be the position of the element)
+	if(gquiz1.find(50) == gquiz1.end()){}
+	if(gquiz1.count(50) == 0){} //these two lines are equivalent
+	
+    // remove element with value 50 in gquiz2 
+    int num = gquiz2.erase (50); 
+  
+    //lower bound and upper bound for set gquiz1 
+    cout << *gquiz1.lower_bound(40) << endl;  //  Returns an iterator to the first element that is equivalent to ‘40’ or definitely will not go before the element ‘40’ in the set.
+    cout << *gquiz1.upper_bound(40) << endl;         
+  
+	//empties the set
+	gquiz1.clear();
+	
+    return 0; 
+  
+} 
