@@ -1,0 +1,62 @@
+#include<stdio.h>
+static int parseint(void){
+   int c, n;
+   n = getchar_unlocked() - '0';
+   while ((c = getchar_unlocked()) >= '0')
+       n = 10*n + c-'0';
+   return n;
+}
+int main() {  
+    int casos = parseint();
+	while(casos>0){
+		printf("%d\n", casos);
+		casos--;
+	}    
+}
+
+static int parseintEOF(void){
+   int c, n;
+   n = getchar_unlocked() - '0';
+   if(n==-49){
+       return -1;
+   }
+   while ((c = getchar_unlocked()) >= '0')
+       n = 10*n + c-'0';
+   return n;
+}
+static int parseintN(void){
+   int c, n;
+   int neg=1;
+   n = getchar_unlocked();
+   if(n=='-'){
+       neg=-1;
+        n = getchar_unlocked() - '0';    
+   }else{
+       n = n-'0';
+   }
+   //n = getchar_unlocked() - '0';
+   while ((c = getchar_unlocked()) >= '0')
+       n = 10*n + c-'0';
+    n*=neg;
+   return n;
+}
+
+static long long int parselong(void){
+long long int n;
+   int c;
+   n = getchar_unlocked() - '0';
+   while ((c = getchar_unlocked()) >= '0')
+       n = 10*n + c-'0';
+   return n;
+}
+
+static int parseintConPosibleBasura(void){
+   int c, n;
+   n = getchar_unlocked() - '0';
+   while(n<0 || n>9){
+         n = getchar_unlocked() - '0';
+   }
+   while ((c = getchar_unlocked()) >= '0')
+       n = 10*n + c-'0';
+   return n;
+}

@@ -1,0 +1,39 @@
+//SIMPLE QUEUE EXAMPLE
+#include <iostream> 
+#include <queue> 
+using namespace std; 
+  
+int main() 
+{ 
+    // Empty Queue 
+    queue<int> myqueue; 
+    myqueue.push(0); 
+    myqueue.push(1); 
+    myqueue.push(2); 
+  
+    // Printing content of queue 
+    while (!myqueue.empty()) { 
+        cout << ' ' << myqueue.front(); 
+        myqueue.pop(); 
+    } 
+} 
+
+//SIMPLE STACK EXAMPLE
+#include <iostream> 
+#include <stack> 
+using namespace std; 
+  
+int main() 
+{ 
+    // Empty stack 
+    stack<int> mystack; 
+    mystack.push(0); 
+    mystack.push(1); 
+    mystack.push(2); 
+  
+    // Printing content of stack 
+    while (!mystack.empty()) { 
+        cout << ' ' << mystack.top(); 
+        mystack.pop(); 
+    } 
+} 

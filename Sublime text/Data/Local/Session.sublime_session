@@ -1,0 +1,1164 @@
+{
+	"folder_history":
+	[
+	],
+	"last_version": 3211,
+	"last_window_id": 15,
+	"log_indexing": false,
+	"settings":
+	{
+		"new_window_height": 887.0,
+		"new_window_settings":
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"letr",
+						"letrasColores"
+					],
+					[
+						"hay",
+						"hayPares"
+					],
+					[
+						"nkm",
+						"nkmergeshort1\tSnippetMergeSort1"
+					],
+					[
+						"prin",
+						"printarr"
+					],
+					[
+						"reop",
+						"resOpMulti"
+					],
+					[
+						"indice",
+						"indiceInvertido"
+					],
+					[
+						"ops",
+						"op1Size"
+					],
+					[
+						"llev",
+						"llevadas"
+					],
+					[
+						"pr",
+						"printf\tprintf …"
+					],
+					[
+						"pri",
+						"printarr"
+					],
+					[
+						"print",
+						"printf\tprintf …"
+					],
+					[
+						"res",
+						"resOperacion"
+					],
+					[
+						"nk",
+						"nkbasic\tSnippetBasic"
+					],
+					[
+						"mejor",
+						"mejorGrupo"
+					],
+					[
+						"prim",
+						"primeFactors"
+					],
+					[
+						"valmo",
+						"valMonedasOrden"
+					],
+					[
+						"par",
+						"parseint"
+					],
+					[
+						"val",
+						"valMonedas"
+					],
+					[
+						"mer",
+						"mergeSort"
+					],
+					[
+						"menor",
+						"menorCosteCamino"
+					],
+					[
+						"meno",
+						"menorCosteCamino"
+					],
+					[
+						"pueblo",
+						"puebloOrigen"
+					],
+					[
+						"puebl",
+						"pueblosCurso"
+					],
+					[
+						"indi",
+						"indiceMenorCoste"
+					],
+					[
+						"aumen",
+						"aumentoDeCoste"
+					],
+					[
+						"au",
+						"aumentoDeCoste"
+					],
+					[
+						"si",
+						"sizeCurso"
+					],
+					[
+						"recr",
+						"recorridos"
+					],
+					[
+						"recorr",
+						"recorridos"
+					],
+					[
+						"li",
+						"limiteSuperior"
+					],
+					[
+						"limit",
+						"limiteInferior"
+					],
+					[
+						"limite",
+						"limiteSuperior"
+					],
+					[
+						"limi",
+						"limite"
+					],
+					[
+						"lim",
+						"limiteInferior"
+					],
+					[
+						"pa",
+						"parseintConPosibleBasura"
+					],
+					[
+						"pars",
+						"parseintN"
+					],
+					[
+						"queda",
+						"quedanFuera"
+					],
+					[
+						"pue",
+						"puebloOrigen"
+					],
+					[
+						"pueb",
+						"pueblosCurso"
+					],
+					[
+						"pu",
+						"pueblosCurso"
+					],
+					[
+						"nc",
+						"namespace"
+					],
+					[
+						"cogi",
+						"cogidosHasta"
+					],
+					[
+						"co",
+						"cogidosHasta"
+					],
+					[
+						"prio",
+						"prio5Invertida"
+					],
+					[
+						"n",
+						"nombres"
+					],
+					[
+						"no",
+						"nkmergeshort1\tSnippetMergeSort1"
+					],
+					[
+						"pe",
+						"prio5Invertida"
+					],
+					[
+						"pri1",
+						"prio1"
+					],
+					[
+						"in",
+						"indicecambio"
+					],
+					[
+						"conda",
+						"contador"
+					],
+					[
+						"b",
+						"break"
+					],
+					[
+						"encontr",
+						"encontradohasta"
+					],
+					[
+						"trap",
+						"trapr"
+					],
+					[
+						"inde",
+						"indexInic"
+					],
+					[
+						"op",
+						"opStart"
+					],
+					[
+						"todas",
+						"todasciguales"
+					],
+					[
+						"cua",
+						"cuadradoActual"
+					],
+					[
+						"arr",
+						"arrIndex"
+					],
+					[
+						"ind",
+						"indexmax"
+					],
+					[
+						"bus",
+						"buscarCabeza"
+					],
+					[
+						"gc",
+						"gcdAct"
+					],
+					[
+						"str",
+						"str1"
+					],
+					[
+						"merges",
+						"mergeSort2"
+					],
+					[
+						"gru",
+						"grupoDestino"
+					],
+					[
+						"gr",
+						"grupoDestino"
+					],
+					[
+						"grup",
+						"grupoDestino"
+					],
+					[
+						"g",
+						"grupoDestino"
+					],
+					[
+						"i",
+						"iostream"
+					],
+					[
+						"f",
+						"fprintf\tfprintf …"
+					],
+					[
+						"d",
+						"def\t#ifndef … #define … #endif"
+					],
+					[
+						"c",
+						"cin"
+					],
+					[
+						"merge",
+						"mergeSort"
+					]
+				]
+			},
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cppCompProg.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cppCompProg.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cppCompProg.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cppCompetitive.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cppCompetitive.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cppCompetitive.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"template",
+						"Snippet: template <typename ${1:_InputIter}>"
+					],
+					[
+						"prv",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"Snippet: ",
+						"Snippet: #include <…>"
+					],
+					[
+						"Snippet: for",
+						"Snippet: For Loop"
+					],
+					[
+						"open",
+						"FastOlympicCoding: Open Settings"
+					],
+					[
+						"Snippettemp\t",
+						"Snippet: template <typename ${1:_InputIter}>"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/d804500/Desktop/SublimeText/source2.cpp",
+				"/C/Users/d804500/Desktop/SublimeText/source.cpp",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/test.sublime-build",
+				"/C/Users/d804500/Desktop/SublimeText/output.txt",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/Snippets/SnippetMergeSort2.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetBasic.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/do...while-loop-(do).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/030-for-int-loop-(fori).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetIfElse.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/if-..-(if).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/C++ Single File.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Packages/C++.sublime-package",
+				"/C/Users/d804500/Desktop/SublimeText/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetMergeSort1.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/mergshortSnippet.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/basicSnippet.sublime-snippet",
+				"/C/Users/d804500/Desktop/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/C++.sublime-package",
+				"/C/Users/d804500/Desktop/SublimeText/inputf.in",
+				"/C/Users/d804500/Desktop/SublimeText/outputf.in",
+				"/C/Users/d804500/Desktop/SublimeText/input.txt",
+				"/C/Users/d804500/Desktop/SublimeText/code.cpp",
+				"/C/Users/d804500/Desktop/SublimeText/template.cpp",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/cppCompProg.sublime-build"
+			],
+			"find":
+			{
+				"height": 28.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"printf",
+					"cin",
+					"}",
+					"];\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 181.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "Packages/User/cppCompetitive.sublime-build",
+			"replace":
+			{
+				"height": 52.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+				"max_columns": 2
+			}
+		},
+		"new_window_width": 1155.0
+	},
+	"windows":
+	[
+		{
+			"auto_complete":
+			{
+				"selected_items":
+				[
+					[
+						"primer",
+						"primerindice"
+					],
+					[
+						"prim",
+						"primerIndice"
+					],
+					[
+						"letr",
+						"letrasColores"
+					],
+					[
+						"hay",
+						"hayPares"
+					],
+					[
+						"nkm",
+						"nkmergeshort1\tSnippetMergeSort1"
+					],
+					[
+						"prin",
+						"printarr"
+					],
+					[
+						"reop",
+						"resOpMulti"
+					],
+					[
+						"indice",
+						"indiceInvertido"
+					],
+					[
+						"ops",
+						"op1Size"
+					],
+					[
+						"llev",
+						"llevadas"
+					],
+					[
+						"pr",
+						"printf\tprintf …"
+					],
+					[
+						"pri",
+						"printarr"
+					],
+					[
+						"print",
+						"printf\tprintf …"
+					],
+					[
+						"res",
+						"resOperacion"
+					],
+					[
+						"nk",
+						"nkbasic\tSnippetBasic"
+					],
+					[
+						"mejor",
+						"mejorGrupo"
+					],
+					[
+						"valmo",
+						"valMonedasOrden"
+					],
+					[
+						"par",
+						"parseint"
+					],
+					[
+						"val",
+						"valMonedas"
+					],
+					[
+						"mer",
+						"mergeSort"
+					],
+					[
+						"menor",
+						"menorCosteCamino"
+					],
+					[
+						"meno",
+						"menorCosteCamino"
+					],
+					[
+						"pueblo",
+						"puebloOrigen"
+					],
+					[
+						"puebl",
+						"pueblosCurso"
+					],
+					[
+						"indi",
+						"indiceMenorCoste"
+					],
+					[
+						"aumen",
+						"aumentoDeCoste"
+					],
+					[
+						"au",
+						"aumentoDeCoste"
+					],
+					[
+						"si",
+						"sizeCurso"
+					],
+					[
+						"recr",
+						"recorridos"
+					],
+					[
+						"recorr",
+						"recorridos"
+					],
+					[
+						"li",
+						"limiteSuperior"
+					],
+					[
+						"limit",
+						"limiteInferior"
+					],
+					[
+						"limite",
+						"limiteSuperior"
+					],
+					[
+						"limi",
+						"limite"
+					],
+					[
+						"lim",
+						"limiteInferior"
+					],
+					[
+						"pa",
+						"parseintConPosibleBasura"
+					],
+					[
+						"pars",
+						"parseintN"
+					],
+					[
+						"queda",
+						"quedanFuera"
+					],
+					[
+						"pue",
+						"puebloOrigen"
+					],
+					[
+						"pueb",
+						"pueblosCurso"
+					],
+					[
+						"pu",
+						"pueblosCurso"
+					],
+					[
+						"nc",
+						"namespace"
+					],
+					[
+						"cogi",
+						"cogidosHasta"
+					],
+					[
+						"co",
+						"cogidosHasta"
+					],
+					[
+						"prio",
+						"prio5Invertida"
+					],
+					[
+						"n",
+						"nombres"
+					],
+					[
+						"no",
+						"nkmergeshort1\tSnippetMergeSort1"
+					],
+					[
+						"pe",
+						"prio5Invertida"
+					],
+					[
+						"pri1",
+						"prio1"
+					],
+					[
+						"in",
+						"indicecambio"
+					],
+					[
+						"conda",
+						"contador"
+					],
+					[
+						"b",
+						"break"
+					],
+					[
+						"encontr",
+						"encontradohasta"
+					],
+					[
+						"trap",
+						"trapr"
+					],
+					[
+						"inde",
+						"indexInic"
+					],
+					[
+						"op",
+						"opStart"
+					],
+					[
+						"todas",
+						"todasciguales"
+					],
+					[
+						"cua",
+						"cuadradoActual"
+					],
+					[
+						"arr",
+						"arrIndex"
+					],
+					[
+						"ind",
+						"indexmax"
+					],
+					[
+						"bus",
+						"buscarCabeza"
+					],
+					[
+						"gc",
+						"gcdAct"
+					],
+					[
+						"str",
+						"str1"
+					],
+					[
+						"merges",
+						"mergeSort2"
+					],
+					[
+						"gru",
+						"grupoDestino"
+					],
+					[
+						"gr",
+						"grupoDestino"
+					],
+					[
+						"grup",
+						"grupoDestino"
+					],
+					[
+						"g",
+						"grupoDestino"
+					],
+					[
+						"i",
+						"iostream"
+					],
+					[
+						"f",
+						"fprintf\tfprintf …"
+					],
+					[
+						"d",
+						"def\t#ifndef … #define … #endif"
+					],
+					[
+						"c",
+						"cin"
+					],
+					[
+						"merge",
+						"mergeSort"
+					]
+				]
+			},
+			"buffers":
+			[
+			],
+			"build_system": "Packages/C++/C++ Single File.sublime-build",
+			"build_system_choices":
+			[
+				[
+					[
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							""
+						],
+						[
+							"Packages/C++/C++ Single File.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/C++/C++ Single File.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cppCompProg.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cppCompProg.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cppCompProg.sublime-build",
+						"Run"
+					]
+				],
+				[
+					[
+						[
+							"Packages/User/cppCompetitive.sublime-build",
+							""
+						],
+						[
+							"Packages/User/cppCompetitive.sublime-build",
+							"Run"
+						]
+					],
+					[
+						"Packages/User/cppCompetitive.sublime-build",
+						""
+					]
+				]
+			],
+			"build_varint": "",
+			"command_palette":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+					[
+						"Snippet: ",
+						"Snippet: Do While Loop"
+					],
+					[
+						"",
+						"Snippet: SnippetBasic"
+					],
+					[
+						"template",
+						"Snippet: template <typename ${1:_InputIter}>"
+					],
+					[
+						"prv",
+						"PackageResourceViewer: Open Resource"
+					],
+					[
+						"Package Control: ",
+						"Package Control: Install Package"
+					],
+					[
+						"Snippet: for",
+						"Snippet: For Loop"
+					],
+					[
+						"open",
+						"FastOlympicCoding: Open Settings"
+					],
+					[
+						"Snippettemp\t",
+						"Snippet: template <typename ${1:_InputIter}>"
+					]
+				],
+				"width": 0.0
+			},
+			"console":
+			{
+				"height": 0.0,
+				"history":
+				[
+				]
+			},
+			"distraction_free":
+			{
+				"menu_visible": true,
+				"show_minimap": false,
+				"show_open_files": false,
+				"show_tabs": false,
+				"side_bar_visible": false,
+				"status_bar_visible": false
+			},
+			"file_history":
+			[
+				"/C/Users/d804500/Desktop/SublimeText/source.cpp",
+				"/C/Users/d804500/Desktop/SublimeText/input.txt",
+				"/C/Users/d804500/Desktop/SublimeText/output.txt",
+				"/C/Users/d804500/Desktop/SublimeText/source2.cpp",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/test.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/Snippets/SnippetMergeSort2.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetBasic.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/do...while-loop-(do).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/030-for-int-loop-(fori).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetIfElse.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/Snippets/if-..-(if).sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/C++/C++ Single File.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Packages/C++.sublime-package",
+				"/C/Users/d804500/Desktop/SublimeText/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/SnippetMergeSort1.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/mergshortSnippet.sublime-snippet",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/basicSnippet.sublime-snippet",
+				"/C/Users/d804500/Desktop/cppCompetitive.sublime-build",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/C++.sublime-package",
+				"/C/Users/d804500/Desktop/SublimeText/inputf.in",
+				"/C/Users/d804500/Desktop/SublimeText/outputf.in",
+				"/C/Users/d804500/Desktop/SublimeText/code.cpp",
+				"/C/Users/d804500/Desktop/SublimeText/template.cpp",
+				"/C/Eneko/Programas/Sublime text/Data/Packages/User/cppCompProg.sublime-build"
+			],
+			"find":
+			{
+				"height": 28.0
+			},
+			"find_in_files":
+			{
+				"height": 0.0,
+				"where_history":
+				[
+				]
+			},
+			"find_state":
+			{
+				"case_sensitive": false,
+				"find_history":
+				[
+					"printf",
+					"cin",
+					"}",
+					"];\n"
+				],
+				"highlight": true,
+				"in_selection": false,
+				"preserve_case": false,
+				"regex": false,
+				"replace_history":
+				[
+				],
+				"reverse": false,
+				"show_context": true,
+				"use_buffer2": true,
+				"whole_word": false,
+				"wrap": true
+			},
+			"groups":
+			[
+				{
+					"sheets":
+					[
+					]
+				},
+				{
+					"sheets":
+					[
+					]
+				},
+				{
+					"sheets":
+					[
+					]
+				}
+			],
+			"incremental_find":
+			{
+				"height": 28.0
+			},
+			"input":
+			{
+				"height": 0.0
+			},
+			"layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						1,
+						2
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.629155344203,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.483632105943,
+					1.0
+				]
+			},
+			"menu_visible": true,
+			"output.exec":
+			{
+				"height": 181.0
+			},
+			"output.find_results":
+			{
+				"height": 0.0
+			},
+			"pinned_build_system": "Packages/User/cppCompetitive.sublime-build",
+			"position": "0,2,3,-1,-1,-1,-1,1556,-1176,611,-5",
+			"project": "",
+			"replace":
+			{
+				"height": 52.0
+			},
+			"save_all_on_build": true,
+			"select_file":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_project":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"select_symbol":
+			{
+				"height": 0.0,
+				"last_filter": "",
+				"selected_items":
+				[
+				],
+				"width": 0.0
+			},
+			"selected_group": 0,
+			"settings":
+			{
+				"last_automatic_layout":
+				[
+					[
+						0,
+						0,
+						1,
+						2
+					],
+					[
+						1,
+						0,
+						2,
+						1
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				]
+			},
+			"show_minimap": true,
+			"show_open_files": false,
+			"show_tabs": true,
+			"side_bar_visible": true,
+			"side_bar_width": 150.0,
+			"status_bar_visible": true,
+			"template_settings":
+			{
+				"max_columns": 2
+			},
+			"window_id": 1,
+			"workspace_name": ""
+		}
+	],
+	"workspaces":
+	{
+		"recent_workspaces":
+		[
+		]
+	}
+}

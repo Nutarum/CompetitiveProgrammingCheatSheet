@@ -1,0 +1,23 @@
+<snippet>
+	<tabTrigger>nkbasic</tabTrigger>
+	<content><![CDATA[
+//#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main() {	
+	int casos;
+	cin>>casos;
+	while(casos>0){
+		int n;
+		cin>>n;
+		int arr[n];
+		for(int i=0;i<n;i++){
+			cin>>arr[i];
+		}
+		printf("%d\n",n);
+		casos--;
+	}
+}
+]]></content>
+	
+</snippet>

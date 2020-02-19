@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+static int parseint(void){
+   int c, n;
+   n = getchar() - '0';
+   while ((c = getchar()) >= '0')
+       n = 10*n + c-'0';
+   return n;
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>nkparseint</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

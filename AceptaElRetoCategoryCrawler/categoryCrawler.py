@@ -1,4 +1,4 @@
-//pide la id de un ejercicio, y nos muestra todas las categorias a las que pertenece
+
 
 from robobrowser import RoboBrowser
 

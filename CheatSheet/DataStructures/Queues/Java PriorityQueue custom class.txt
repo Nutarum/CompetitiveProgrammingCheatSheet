@@ -1,0 +1,64 @@
+import java.util.*;
+
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+public class MyClass {
+    
+     static class Employee implements Comparable<Employee> {
+            public String name;
+            public int salary;
+            public int order;
+        
+            public Employee(String name, int salary, int order) {
+                this.name = name;
+                this.salary = salary;
+                this.order = order;
+            }
+        
+            // Compare two employee objects by their salary
+            @Override
+            public int compareTo(Employee employee) {
+                if(this.salary < employee.salary) {
+                    return 1;
+                } else if (this.salary > employee.salary) {
+                    return -1;
+                } else {
+                    
+                     if(this.order > employee.order) {
+                    return 1;
+                } else  {
+                    return -1;
+                } 
+                
+                   
+                }
+            }
+        }
+ 
+ //ESTA ES LA SOLUCIÓN (AC) DEL 311 en aceptaelreto
+    
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+         int eventos = sc.nextInt();sc.nextLine();
+        while(eventos>0){
+           PriorityQueue<Employee> pacientes = new PriorityQueue<>();
+            
+            for(int i=0;i<eventos;i++){
+                String linea = sc.nextLine();
+               String tipo = linea.split(" ")[0];
+                if(tipo.equals("I")){
+                    String nombre = linea.split(" ")[1];
+                    int prioridad = Integer.parseInt(linea.split(" ")[2]);
+                    pacientes.add(new Employee(nombre, prioridad,i));
+                }else{
+                     System.out.println(pacientes.poll().name);
+                }
+            }
+            System.out.println("----");
+            eventos =  sc.nextInt();sc.nextLine();
+        }
+    }
+    
+        
+}
