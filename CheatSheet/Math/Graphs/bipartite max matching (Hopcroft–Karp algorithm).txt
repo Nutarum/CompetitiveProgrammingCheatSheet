@@ -1,0 +1,259 @@
+//SOLUCION PARA -> https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2100ç
+
+//es bueno para grafos grandes, porque en vez de matriz de adyacencias, tiene listas de adyacencias para cada vertice
+//Hopcroft–Karp algorithm
+//matching copiado de geeksforgeeks
+// theory -> https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-1-introduction/
+// implementation -> https://www.geeksforgeeks.org/hopcroft-karp-algorithm-for-maximum-matching-set-2-implementation/
+
+
+// !!!!!!!!!!!!!!!!!!!!!!!! OJO
+// parece que esta implementación funciona mal con solo 1 arista
+// hay que corregirla a mano
+
+#include <iostream> 
+#include <queue>
+#include <list>
+#include <string.h> 
+using namespace std;  
+
+#define NIL 0 
+#define INF 999999999 
+  
+// A class to represent Bipartite graph for Hopcroft 
+// Karp implementation 
+class BipGraph { 
+    // m and n are number of vertices on left 
+    // and right sides of Bipartite Graph 
+    int m, n; 
+  
+    // adj[u] stores adjacents of left side 
+    // vertex 'u'. The value of u ranges from 1 to m. 
+    // 0 is used for dummy vertex 
+    list<int> *adj; 
+  
+    // These are basically pointers to arrays needed 
+    // for hopcroftKarp() 
+    int *pairU, *pairV, *dist; 
+  
+public: 
+    BipGraph(int m, int n); // Constructor 
+    void addEdge(int u, int v); // To add edge 
+  
+    // Returns true if there is an augmenting path 
+    bool bfs(); 
+  
+    // Adds augmenting path if there is one beginning 
+    // with u 
+    bool dfs(int u); 
+  
+    // Returns size of maximum matcing 
+    int hopcroftKarp(); 
+}; 
+  
+// Returns size of maximum matching 
+int BipGraph::hopcroftKarp() { 
+    // pairU[u] stores pair of u in matching where u 
+    // is a vertex on left side of Bipartite Graph. 
+    // If u doesn't have any pair, then pairU[u] is NIL 
+    pairU = new int[m+1]; 
+  
+    // pairV[v] stores pair of v in matching. If v 
+    // doesn't have any pair, then pairU[v] is NIL 
+    pairV = new int[n+1]; 
+  
+    // dist[u] stores distance of left side vertices 
+    // dist[u] is one more than dist[u'] if u is next 
+    // to u'in augmenting path 
+    dist = new int[m+1]; 
+  
+    // Initialize NIL as pair of all vertices 
+    for (int u=0; u<m; u++) 
+        pairU[u] = NIL; 
+    for (int v=0; v<n; v++) 
+        pairV[v] = NIL; 
+  
+    // Initialize result 
+    int result = 0; 
+  
+    // Keep updating the result while there is an 
+    // augmenting path. 
+    while (bfs())     { 
+        // Find a free vertex 
+        for (int u=1; u<=m; u++) 
+  
+            // If current vertex is free and there is 
+            // an augmenting path from current vertex 
+            if (pairU[u]==NIL && dfs(u)) 
+                result++; 
+    } 
+    return result; 
+} 
+  
+// Returns true if there is an augmenting path, else returns 
+// false 
+bool BipGraph::bfs() { 
+    queue<int> Q; //an integer queue 
+  
+    // First layer of vertices (set distance as 0) 
+    for (int u=1; u<=m; u++) { 
+        // If this is a free vertex, add it to queue 
+        if (pairU[u]==NIL) { 
+            // u is not matched 
+            dist[u] = 0; 
+            Q.push(u); 
+        } 
+  
+        // Else set distance as infinite so that this vertex 
+        // is considered next time 
+        else dist[u] = INF; 
+    } 
+  
+    // Initialize distance to NIL as infinite 
+    dist[NIL] = INF; 
+  
+    // Q is going to contain vertices of left side only.  
+    while (!Q.empty()) { 
+        // Dequeue a vertex 
+        int u = Q.front(); 
+        Q.pop(); 
+  
+        // If this node is not NIL and can provide a shorter path to NIL 
+        if (dist[u] < dist[NIL]) { 
+            // Get all adjacent vertices of the dequeued vertex u 
+            list<int>::iterator i; 
+            for (i=adj[u].begin(); i!=adj[u].end(); ++i) { 
+                int v = *i; 
+  
+                // If pair of v is not considered so far 
+                // (v, pairV[V]) is not yet explored edge. 
+                if (dist[pairV[v]] == INF) { 
+                    // Consider the pair and add it to queue 
+                    dist[pairV[v]] = dist[u] + 1; 
+                    Q.push(pairV[v]); 
+                } 
+            } 
+        } 
+    } 
+  
+    // If we could come back to NIL using alternating path of distinct 
+    // vertices then there is an augmenting path 
+    return (dist[NIL] != INF); 
+} 
+  
+// Returns true if there is an augmenting path beginning with free vertex u 
+bool BipGraph::dfs(int u) { 
+    if (u != NIL) { 
+        list<int>::iterator i; 
+        for (i=adj[u].begin(); i!=adj[u].end(); ++i) { 
+            // Adjacent to u 
+            int v = *i; 
+  
+            // Follow the distances set by BFS 
+            if (dist[pairV[v]] == dist[u]+1) { 
+                // If dfs for pair of v also returns 
+                // true 
+                if (dfs(pairV[v]) == true) { 
+                    pairV[v] = u; 
+                    pairU[u] = v; 
+                    return true; 
+                } 
+            } 
+        } 
+  
+        // If there is no augmenting path beginning with u. 
+        dist[u] = INF; 
+        return false; 
+    } 
+    return true; 
+} 
+  
+// Constructor 
+BipGraph::BipGraph(int m, int n) { 
+    this->m = m; 
+    this->n = n; 
+    adj = new list<int>[m+1]; 
+} 
+  
+// To add edge from u to v and v to u 
+void BipGraph::addEdge(int u, int v) { 
+    adj[u].push_back(v); // Add u to v’s list. 
+} 
+
+int main() {    
+    int arrA[100];
+    int nA,nB;
+    int casos;
+    int contador = 1;
+    cin>>casos;
+    while(casos>0){  
+        cin>>nA;       
+        bool hayAlguno = false;
+        
+        for(int i=0;i<nA;i++){
+            cin>>arrA[i];
+            if(arrA[i]<0){
+                arrA[i]*=-1;
+            }
+        }
+     
+        cin>>nB;
+        BipGraph g(nA, nB); 
+
+        for(int i=0;i<nB;i++){
+            int B;
+            cin>>B;
+            if(B<0){
+                B*=-1;
+            }
+            // vamos a montar la matriz de adyacencias del grafo
+            // en esta matriz, vamos a marcar como 1 las aristas no elegidas para el matching
+            // -1 las si elegidas
+            // 0 para el resto
+            for(int j=0;j<nA;j++){
+                //si B es multiplo de A
+                bool isMultiple = false;                
+                if(B==0){
+                    isMultiple=true;                    
+                }else if(arrA[j]==0){                    
+                    isMultiple=false;
+                }else if(B%arrA[j]==0){
+                    isMultiple=true;
+                }
+                if(isMultiple){
+                    g.addEdge(j+1,i+1); 
+                    hayAlguno=true;
+                }
+            }
+        }
+        int res = g.hopcroftKarp();
+        if(res==0 && hayAlguno){
+            res=1;
+        }
+        printf("Case %d: %d\n",contador,res);
+        contador++;
+        casos--;
+    } 
+}
+
+// ESTO ES UN WA
+/*
+4
+1 0
+1 0
+2 1 0
+2 0 1
+5 7 5 10 20 25
+5 7 14 21 28 100
+100 4   -4  3   -6  5   -8  3   -2  -8  6   -4  1   -3  6   -2  -6  4   -6  7   1   0   2   9   -4  -5  0   9   -6  9   9   -8  -4  3   -4  2   1   -10 -6  2   9   -5  6   9   8   1   4   10  5   2   10  -3  3   -10 9   3   0   0   2   4   4   -1  -5  -3  -2  -3  10  -8  9   -3  -3  -4  0   -10 -5  9   6   3   -2  -5  3   -1  1   -1  -4  -4  -1  -3  7   5   2   -1  0   9   3   -1  8   6   -9  -3  6
+100
+3   1   1   -4  -8  -10 -5  -2  -10 4   -8  9   -3  7   -4  -2  -4  -2  -2  3   8   -5  6   -5  -6  -6  -8  2   -1  8   5   -8  -2  -9  -7  -10 -5  -9  -7  0   8   -8  -9  -10 -2  -8  -7  -6  2   -8  -9  -2  6   10  9   -8  1   9   -3  5   3   -3  9   -7  3   10  3   7   2   8   7   2   -3  1   -8  9   -1  -3  -10 7   9   7   -3  10  5   -10 2   6   3   -2  6   -3  9   0   7   5   0   8   10  -5
+*/
+/*
+Case 1: 1
+Case 2: 2
+Case 3: 2
+Case 4: 89
+
+*/
+
